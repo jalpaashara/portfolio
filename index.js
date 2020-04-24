@@ -1,1 +1,3 @@
-document.location.href="portfolio.html";
+window.onload = function() {
+    window.location.replace("portfolio.html");
+}
