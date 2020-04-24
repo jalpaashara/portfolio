@@ -1,1 +1,1 @@
-window.location.href="/portfolio.html";
+document.location.href="portfolio.html";
