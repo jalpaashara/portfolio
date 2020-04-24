@@ -1,1 +1,1 @@
-document.location.replace("/portfolio.html");
+window.location.href="/portfolio.html";
