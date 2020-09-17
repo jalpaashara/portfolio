@@ -21,4 +21,9 @@
 # System Files
 .DS_Store
 Thumbs.db
- 
+
+#firebase config
+.firebase
+.firebaserc
+public/
+firebase.json
