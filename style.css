@@ -9,7 +9,7 @@ body {
     background-color: #FCFCFC;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .06);
     display: grid;
-    grid-template-rows: 750px repeat(4,minmax(250px,auto)) 250px;
+    grid-template-rows: 750px repeat(4,minmax(250px,auto)) 200px;
     margin: 0px;
     grid-gap: 5px;
     overflow: hidden;
@@ -47,10 +47,6 @@ body {
 
 
 #about{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    margin: 0px 30px 30px 30px;
     text-align-last: center;
 }
 
@@ -88,13 +84,6 @@ h2 {
     text-transform: uppercase;
     font-size: 1.2rem;
     color: #FFFFFF;
-}
-
-.exp_content{
-    display: grid;
-    grid-template-rows: repeat(2,minmax(100px,auto));
-    grid-template-columns: 1fr;
-    padding: 20px;
 }
 
 .experience{
@@ -147,7 +136,7 @@ h5 {
 }
 
 .logo{
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -157,13 +146,15 @@ h5 {
     grid-template-columns: repeat(7,1fr);
     grid-row-gap: 10px;
     padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
+    padding-right: 25px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
 .center{
     text-align: center;
+    padding-left: 2px;
+    font-size: 15px;
 }
 
 .ed_content{
@@ -260,11 +251,9 @@ footer{
 
 
 @media all and (max-width: 900px)  {
-    #maincontainer, #about,  .work, .photography
-     {
+    #maincontainer, #about, .work, .photography {
         display: block;
     }
-
 
     .skills_content{
         display: grid;
@@ -387,8 +376,43 @@ footer{
         .work_col{
             padding-left: 20px;
         }
+
+        .skills_content{
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            grid-template-columns: repeat(5,1fr);
+        }
     }
 
+    @media all and (max-width: 500px) {
+        .experience{
+            display: block;
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, .06);
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .exp0a > p, .exp1a > p{
+            padding: 0;
+        }
+
+        .listss{
+            font-size: 0.8rem;
+        }
+
+        .skills_content{
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        .center{
+            font-size: 12px;
+            padding-left: 0;
+        }
+
+    }
     @media all and (max-width: 350px)  {
         .portfolio_content{
             display: grid;
